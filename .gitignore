@@ -218,3 +218,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# BUS-BRA public repository: keep research data and generated outputs local
+/inputs/*.csv
+/inputs/*.xlsx
+/inputs/*.zip
+/data/*.csv
+/data/*.xlsx
+/data/*.zip
+/source_data/
+/ready_dataset/
+/BUSBRA.zip
+/BUSBRA_Team_Handoff.zip
+/comparison_output/
+/submissions/*/predictions.csv
+/submissions/*/selected_features.csv
+/submissions/*/best_params.csv
+/submissions/*/timings.csv
+/submissions/*/run_info.json
+*.DS_Store
