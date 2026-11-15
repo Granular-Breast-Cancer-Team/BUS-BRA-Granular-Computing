@@ -221,6 +221,7 @@ __marimo__/
 
 # BUS-BRA public repository: keep research data and generated outputs local
 /inputs/*.csv
+/outputs/gbfrs/
 /inputs/*.xlsx
 /inputs/*.zip
 /data/*.csv
