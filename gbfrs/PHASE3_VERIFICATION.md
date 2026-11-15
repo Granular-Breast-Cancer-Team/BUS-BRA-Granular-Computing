@@ -1,5 +1,7 @@
 # Phase 3 GBFRS mathematical verification and controlled pilot
 
+> **Historical milestone:** This report records the state at that phase. The complete five-fold evaluation is documented in [PHASE5_FINAL_RESULTS.md](PHASE5_FINAL_RESULTS.md).
+
 Date: 2026-10-15
 
 This report covers the independent implementation in `selector.py`. The

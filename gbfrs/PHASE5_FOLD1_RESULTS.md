@@ -1,5 +1,7 @@
 # GBFRS Phase 5 — Outer Fold 1 Results
 
+> **Historical milestone:** This report records the state at that phase. The complete five-fold evaluation is documented in [PHASE5_FINAL_RESULTS.md](PHASE5_FINAL_RESULTS.md).
+
 Status: **outer fold 1 complete; folds 2–5 intentionally not run**.
 
 This is one locked-protocol outer-fold result. It is not a five-fold estimate,

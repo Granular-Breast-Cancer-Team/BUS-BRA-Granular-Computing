@@ -1,8 +1,10 @@
 # GBFRS implementation technical note
 
 This implementation follows the mathematical definitions in Xia et al.,
-“GBFRS: Robust Fuzzy Rough Sets via Granular-ball Computing” (arXiv:2501.18413,
-2025). It does not copy source from the authors’ public repository, which has
+“GBFRS: Robust Fuzzy Rough Sets via Granular Ball Computing” (2025 arXiv
+preprint, arXiv:2501.18413; published by Lian et al. in *IEEE Transactions on
+Neural Networks and Learning Systems*, 37(10), 5271–5285, 2026,
+DOI: 10.1109/TNNLS.2026.3681370). It does not copy source from the authors’ public repository, which has
 no explicit software license and whose archive was inspected only as a
 reference.
 

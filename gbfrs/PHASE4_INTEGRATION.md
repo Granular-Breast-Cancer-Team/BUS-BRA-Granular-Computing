@@ -1,5 +1,7 @@
 # GBFRS Phase 4 — Pipeline Integration and Validation
 
+> **Historical milestone:** This report records the state at that phase. The complete five-fold evaluation is documented in [PHASE5_FINAL_RESULTS.md](PHASE5_FINAL_RESULTS.md).
+
 Status: **integration and smoke validation complete; full experiment not run**.
 
 No full 288-feature GBFRS run, nested cross-validation, final accuracy

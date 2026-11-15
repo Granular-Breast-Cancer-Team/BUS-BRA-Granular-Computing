@@ -1,5 +1,7 @@
 # GBFRS Phase 3.5 — Memory Optimization and Robustness Verification
 
+> **Historical milestone:** This report records the state at that phase. The complete five-fold evaluation is documented in [PHASE5_FINAL_RESULTS.md](PHASE5_FINAL_RESULTS.md).
+
 Status: **mathematical verification and controlled BUS-BRA pilots complete;
 ready for SVM integration pending approval**.
 

@@ -109,7 +109,7 @@ The report does not compare methods, test statistical significance, or claim ext
 
 ## References
 
-1. Xia et al., “Granular-Ball Fuzzy-Rough Feature Selection,” arXiv:2501.18413, 2025.
+1. Lian et al., “GBFRS: Robust Fuzzy Rough Sets via Granular Ball Computing,” *IEEE Transactions on Neural Networks and Learning Systems*, 37(10), 5271–5285 (2026), DOI: 10.1109/TNNLS.2026.3681370. The implementation was guided by the 2025 arXiv preprint (arXiv:2501.18413).
 2. Official author implementation repository: `https://github.com/lianxiaoyu724/GBFRS`.
 3. Project evaluation contract: `evaluation/evaluation_contract.json`.
 4. Project protocol and submission schema: `docs/EVALUATION_PROTOCOL.md` and `docs/SUBMISSION_FORMAT.md`.
