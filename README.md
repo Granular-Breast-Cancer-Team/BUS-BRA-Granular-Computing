@@ -2,7 +2,7 @@
 
 Reproducible experiments for **benign-versus-malignant breast tumour classification** using BUS-BRA radiomic features. Three support vector machine (SVM) approaches are being developed under one patient-grouped evaluation protocol.
 
-> **Status:** All three methods have completed their five-fold evaluations. The paired three-method comparison is pending.
+> **Status:** The five-fold evaluations and paired three-method comparison are complete. See the [final comparison](evaluation/final_comparison/README.md) for performance, feature reduction, and fold-level results.
 
 ## Approaches
 
@@ -49,7 +49,7 @@ The protocol identifier is `BUSBRA-V1-OUTER5-INNER3-MACROF1`. This is **research
 | [`baseline_svm/`](baseline_svm/) | All-feature SVM team workspace |
 | [`fuzzy_rough/`](fuzzy_rough/) | Conventional QuickReduct selector, nested SVM runner and five-fold results |
 | [`docs/`](docs/) | Dataset provenance, experimental protocol and submission format |
-| [`evaluation/`](evaluation/) | Frozen evaluation contract |
+| [`evaluation/`](evaluation/) | Frozen evaluation contract and aggregate three-method comparison |
 | [`tests/`](tests/) | Synthetic algorithm, pipeline, reproducibility and leakage tests |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contribution workflow and data-handling rules |
 
