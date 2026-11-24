@@ -2,14 +2,14 @@
 
 Reproducible experiments for **benign-versus-malignant breast tumour classification** using BUS-BRA radiomic features. Three support vector machine (SVM) approaches are being developed under one patient-grouped evaluation protocol.
 
-> **Status:** The GBFRS + SVM implementation and five-fold evaluation are complete on `feature/gbfrs`. The all-feature baseline and conventional fuzzy-rough approach are maintained separately by the team. The complete three-method comparison is still pending; this repository makes **no superiority claim**.
+> **Status:** All three methods have completed their five-fold evaluations. The paired three-method comparison is pending.
 
 ## Approaches
 
-| Approach | Feature selection | Implementation | Status on this branch |
+| Approach | Feature selection | Implementation | Evaluation |
 |---|---|---|---|
-| All-feature SVM | All 288 predictors | [`baseline_svm/`](baseline_svm/) | Separate team branch |
-| Conventional fuzzy-rough + SVM | Classical fuzzy-rough selection | [`fuzzy_rough/`](fuzzy_rough/) | Separate team branch |
+| All-feature SVM | All 288 predictors | [`baseline_svm/`](baseline_svm/) | Five outer folds completed |
+| Conventional fuzzy-rough + SVM | Lower-approximation QuickReduct | [`fuzzy_rough/`](fuzzy_rough/) | [Five-fold results](fuzzy_rough/RESULTS.md) |
 | **GBFRS + SVM** | Granular-ball fuzzy-rough selection | **[`gbfrs/`](gbfrs/)** | **Five outer folds completed** |
 
 Each method starts from the same 288 predictors, uses the same held-out patients and SVM search space, and follows the [locked evaluation protocol](docs/EVALUATION_PROTOCOL.md).
@@ -47,7 +47,7 @@ The protocol identifier is `BUSBRA-V1-OUTER5-INNER3-MACROF1`. This is **research
 |---|---|
 | [`gbfrs/`](gbfrs/) | GBFRS selector, SVM pipeline, fold runner, mathematical notes and figures |
 | [`baseline_svm/`](baseline_svm/) | All-feature SVM team workspace |
-| [`fuzzy_rough/`](fuzzy_rough/) | Conventional fuzzy-rough team workspace |
+| [`fuzzy_rough/`](fuzzy_rough/) | Conventional QuickReduct selector, nested SVM runner and five-fold results |
 | [`docs/`](docs/) | Dataset provenance, experimental protocol and submission format |
 | [`evaluation/`](evaluation/) | Frozen evaluation contract |
 | [`tests/`](tests/) | Synthetic algorithm, pipeline, reproducibility and leakage tests |
