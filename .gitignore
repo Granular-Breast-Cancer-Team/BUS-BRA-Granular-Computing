@@ -221,6 +221,7 @@ __marimo__/
 
 # BUS-BRA public repository: keep research data and generated outputs local
 /inputs/*.csv
+/inputs/allowed_feature_columns.txt
 /outputs/gbfrs/
 /inputs/*.xlsx
 /inputs/*.zip
@@ -237,4 +238,6 @@ __marimo__/
 /submissions/*/best_params.csv
 /submissions/*/timings.csv
 /submissions/*/run_info.json
+/submissions/baseline/baseline_fold_metrics.csv
+/submissions/baseline/baseline_metrics_summary.csv
 *.DS_Store

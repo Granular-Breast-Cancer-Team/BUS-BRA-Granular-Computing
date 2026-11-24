@@ -4,7 +4,7 @@
 
 This report summarizes the completed GBFRS + SVM run across all five patient-disjoint outer folds. No model was retrained while preparing these deliverables. The original per-fold outputs under `outputs/gbfrs/fold1/` through `fold5/` were read without modification.
 
-The results are GBFRS-only results under the locked protocol. They do not establish that GBFRS outperformed the baseline or conventional fuzzy-rough method. The private three-way comparison remains pending until those two submissions are available.
+This report describes the GBFRS run under the locked protocol. The team has since validated all three submissions on the same held-out images. [Final three-method comparison](../evaluation/final_comparison/README.md)
 
 ## Dataset and protocol
 
@@ -88,7 +88,7 @@ Independent validation confirmed:
 - All five fold records have completed status, finite timing values, one best-parameter row, and one timing row.
 - The exact private handoff headers and required run-information keys validate successfully.
 
-The original private `tools/compare_results.py` checker was run in an isolated temporary root containing the assembled GBFRS submission. It stopped with a missing `baseline` submission before producing a three-way scoreboard. This is expected when the other methods are not available. GBFRS-alone validation passed; the full baseline/fuzzy-rough/GBFRS comparison is pending.
+At this stage, the team verified the GBFRS submission separately. The original `tools/compare_results.py` checker later validated all three methods together. [Paired comparison and validation](../evaluation/final_comparison/README.md#reproduction-and-checks)
 
 The complete local test suite also passed: 32 tests passed. The warnings were environment-level core-count detection and an expected duplicate-point clustering warning in a synthetic edge-case test.
 
