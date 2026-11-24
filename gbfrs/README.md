@@ -2,7 +2,7 @@
 
 Independent implementation of **Granular-Ball Fuzzy-Rough Feature Selection (GBFRS)** and a support vector machine (SVM) classifier evaluated on the BUS-BRA radiomic features.
 
-**Status:** The five-fold GBFRS evaluation is complete. The three-way comparison against the all-feature SVM and conventional fuzzy-rough + SVM is pending the other methods' private submissions. No relative-performance claim is made here.
+The five-fold GBFRS evaluation is complete. For the paired comparison against both other methods, see the [final three-method results](../evaluation/final_comparison/README.md).
 
 ## Method
 
@@ -101,13 +101,20 @@ python -m pip install -r requirements.txt
 python -m pytest -p no:cacheprovider -q
 ```
 
-The tests use synthetic fixtures and **do not require the private CSV**. For a controlled outer-fold rerun, first place the authorized frozen dataset under `inputs/`, verify its SHA-256, and inspect the runner's exact options:
+The tests use synthetic fixtures. To rerun the experiment, place the authorized frozen CSV under `inputs/` and verify its SHA-256. Run the following from the repository root in the activated environment. [Input instructions](../inputs/README.md)
 
 ```bash
-python -m gbfrs.run_outer_fold --help
+for fold in 1 2 3 4 5; do
+  python -m gbfrs.run_outer_fold \
+    --outer-fold "$fold" \
+    --output-dir "outputs/gbfrs/replay/fold-$fold" \
+    --cache-dir "outputs/gbfrs/replay/cache/fold-$fold" \
+    --checkpoint "outputs/gbfrs/replay/checkpoints/fold-$fold.json" \
+    || break
+done
 ```
 
-Use **new** private output, checkpoint and cache locations rather than writing over the archived folds. Running the full nested protocol is computationally more expensive than running the synthetic tests.
+The runner verifies the frozen CSV and writes each fold's files under `outputs/gbfrs/replay/`. Choose a fresh private directory for a separate run.
 
 ## Limitations and privacy
 

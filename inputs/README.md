@@ -1,7 +1,8 @@
-# Frozen input location (private / ignored)
+# Local experiment inputs
 
-Put the exact `BUSBRA_features_ready.csv` from the distributed BUSBRA_Team_Handoff.zip into this directory.
+Copy these files from the team's private `BUSBRA_Team_Handoff.zip` into this directory:
 
-The file is intentionally **NOT** committed to this public repository until the BUS-BRA source redistribution conditions and required notice have been checked.
+- `BUSBRA_features_ready.csv` contains the frozen 1,875 image records and 288 radiomic predictors.
+- `allowed_feature_columns.txt` lists the original predictors accepted by the baseline runner.
 
-Its SHA-256 must match the value in ../docs/DATASET.md. Do not edit the input table or add new features. Keep CSVs and medical images out of GitHub for now.
+Verify the CSV's SHA-256 against the dataset contract before training. The input files and image-level outputs belong in the team's private handoff. [Dataset contract](../docs/DATASET.md) · [Submission format](../docs/SUBMISSION_FORMAT.md)

@@ -1,6 +1,6 @@
 # Conventional fuzzy-rough selection + SVM
 
-This experiment tests whether lower-approximation fuzzy-rough feature selection can reduce the 288 BUS-BRA radiomic predictors while preserving benign-versus-malignant classification. Each image is predicted once, with all images from the same patient kept together. [Five-fold results](RESULTS.md)
+This experiment tests whether lower-approximation fuzzy-rough feature selection can reduce the 288 BUS-BRA radiomic predictors while preserving benign-versus-malignant classification. Each image is predicted once, with all images from the same patient kept together. [Five-fold results](RESULTS.md) · [Final three-method comparison](../evaluation/final_comparison/README.md)
 
 ## Feature selection
 
