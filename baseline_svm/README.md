@@ -24,6 +24,52 @@ All five folds selected a linear kernel with `C=0.1`. Fold 3 used equal class we
 
 Malignant recall ranged from 66.67% to 89.34%. Sample standard deviations describe fold-to-fold variation. Evaluation was limited to the frozen BUS-BRA cohort.
 
+
+## Original baseline visualisations
+
+The figures below were generated from the saved outputs of the original
+288-feature SVM baseline. They represent image-level evaluation using
+patient-disjoint outer folds. They are not results from the separate
+baseline rerun used in the final three-method comparison.
+
+### Figure 1. Aggregated out-of-fold confusion matrix
+
+![Original baseline confusion matrix](figures/baseline_confusion_matrix.png)
+
+The matrix combines 1,875 held-out image predictions from five outer
+folds. The model correctly classified 1,136 benign and 487 malignant
+images. It incorrectly classified 132 benign images as malignant and
+120 malignant images as benign.
+
+### Figure 2. Five-fold classification performance
+
+![Original baseline fold metrics](figures/baseline_fold_metrics.png)
+
+This figure compares accuracy, balanced accuracy, and macro-F1 across
+the five patient-separated outer folds. Mean accuracy was 86.50%,
+and mean macro-F1 was 0.8461.
+
+### Figure 3. Malignant sensitivity and benign specificity
+
+![Original baseline metric variability](figures/baseline_metric_variability_purple_teal.png)
+
+Malignant sensitivity varied from 66.67% to 89.34% across the five
+folds. Benign specificity ranged from 84.55% to 95.12%.
+This highlights variation in classification performance between
+the malignant and benign classes.
+
+### Figure 4. Runtime by outer fold
+
+![Original baseline runtime](figures/baseline_runtime_by_fold.png)
+
+The five outer-fold procedures required a combined recorded runtime
+of 574.94 seconds. These measurements include hyperparameter tuning,
+final refitting, and prediction, rather than prediction time alone.
+
+All figures were reconstructed from the original baseline's saved
+predictions and timing records without retraining the model.
+
+
 ## Reproduce the baseline
 
 Use Python 3.11 and put the frozen CSV and feature allowlist in `inputs/`. Both are supplied in the team handoff. The original experiment used Python 3.11.9. [Input instructions](../inputs/README.md)
