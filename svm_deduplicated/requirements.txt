@@ -1,0 +1,12 @@
+
+# Original deduplicated SVM experiment
+# Python 3.11.9
+# Versions recorded in run_info.json
+
+pandas==3.0.6
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.1
+
+# Required only for regenerating the figures
+matplotlib
